@@ -1,4 +1,4 @@
-import './global.css';
+import '@watheia/home.ui-theme';
 
 export const metadata = {
   title: 'Welcome to home',

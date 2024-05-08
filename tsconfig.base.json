@@ -14,7 +14,13 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@home/components/*": ["apps/home/components/*"],
+      "@home/types/*": ["apps/home/types/*"],
+      "@home/utils/*": ["apps/home/utils/*"],
+      "@watheia/home.ui-theme": ["libs/ui-theme/src/index.ts"],
+      "@watheia/studio-ui": ["libs/studio-ui/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

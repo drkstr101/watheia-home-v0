@@ -1,0 +1,41 @@
+@import url('tailwindcss/base.css');
+
+@font-face {
+  font-family: 'Mona Sans';
+  font-weight: 200 900;
+  font-display: block;
+  font-style: normal;
+  font-stretch: 75% 125%;
+  src: url('./fonts/Mona-Sans.var.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  src: local('Fira Code'), local('FiraCode'), url('./fonts/FiraCode.var.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  body {
+    @apply flex min-h-screen flex-col antialiased;
+  }
+  body > div,
+  .sb-page,
+  .sb-base {
+    @apply flex grow flex-col;
+  }
+  .sb-layout {
+    @apply grow;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply break-words;
+    line-height: 1.15;
+  }
+}
